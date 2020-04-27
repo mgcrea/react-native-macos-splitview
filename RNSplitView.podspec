@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.authors                   = package["author"]
   s.homepage                  = package["homepage"]
 
-  s.platform                  = :macos, "10.15"
+  s.platform                  = :macos, "10.14"
   s.requires_arc              = true
 
   s.source                    = { :git => package["repository"]["url"], :tag => s.version }
