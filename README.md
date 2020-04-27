@@ -21,22 +21,86 @@ end
 
 ## Usage
 
+From a `npx react-native init --template react-native-template-typescript Sandbox`:
+
 ```tsx
+import React from 'react';
+import {Button, StatusBar, StyleSheet, Text, View} from 'react-native';
 import SplitView, {SplitViewDividerStyle} from 'react-native-macos-splitview';
+import {
+  Colors,
+  DebugInstructions,
+  ReloadInstructions,
+} from 'react-native/Libraries/NewAppScreen';
 
-type Props = {};
+const {SplitViewDividerStylePaneSplitter} = SplitViewDividerStyle;
 
-const MasterDetailView: FunctionComponent<Props> = () => {
+const App = () => {
   return (
-    <SplitView
-      dividerStyle={SplitViewDividerStyle.SplitViewDividerStylePaneSplitter}
-      vertical={true}
-      style={{flexGrow: 1, flexDirection: 'row'}}>
-      <MasterView />
-      <DetailView />
-    </SplitView>
+    <>
+      <StatusBar barStyle="dark-content" />
+      <SplitView
+        dividerStyle={SplitViewDividerStylePaneSplitter}
+        vertical={true}
+        style={styles.splitView}>
+        <View style={styles.masterContainer}>
+          <Text style={styles.sectionTitle}>See Your Changes</Text>
+          <Text style={styles.sectionDescription}>
+            <ReloadInstructions />
+          </Text>
+          <Button
+            title="Click me #1!"
+            onPress={() => console.warn('#1 Pressed')}
+          />
+        </View>
+        <View style={styles.detailContainer}>
+          <Text style={styles.sectionTitle}>Debug</Text>
+          <Text style={styles.sectionDescription}>
+            <DebugInstructions />
+          </Text>
+          <Button
+            title="Click me #2!"
+            onPress={() => console.warn('#2 Pressed')}
+          />
+        </View>
+      </SplitView>
+    </>
   );
 };
+
+const styles = StyleSheet.create({
+  splitView: {
+    flexGrow: 1,
+    flexDirection: 'row',
+    alignItems: 'stretch',
+  },
+  masterContainer: {
+    backgroundColor: 'darkgrey',
+    alignItems: 'flex-start',
+    flexGrow: 1,
+    flexShrink: 1,
+    flexBasis: 200,
+  },
+  detailContainer: {
+    backgroundColor: 'lightgrey',
+    alignItems: 'flex-start',
+    flexGrow: 1,
+    flexShrink: 1,
+  },
+  sectionTitle: {
+    fontSize: 24,
+    fontWeight: '600',
+    color: Colors.black,
+  },
+  sectionDescription: {
+    marginTop: 8,
+    fontSize: 18,
+    fontWeight: '400',
+    color: Colors.dark,
+  },
+});
+
+export default App;
 ```
 
 ## License
