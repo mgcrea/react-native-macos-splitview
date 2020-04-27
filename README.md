@@ -1,23 +1,37 @@
-# react-native-macos-toolbar
+# react-native-macos-splitview
 
-foobar
+NSSplitView component for react-native on macOS
 
 ## Installation
 
 ```sh
-npm install react-native-macos-toolbar
+yarn add react-native-macos-splitview
 ```
 
 ## Usage
 
-```js
-import MacosToolbar from "react-native-macos-toolbar";
+```tsx
+import SplitView, {SplitViewDividerStyle} from 'react-native-macos-splitview';
 
-// ...
+type Props = {};
 
-const deviceName = await MacosToolbar.getDeviceName();
+const MasterDetailView: FunctionComponent<Props> = () => {
+  return (
+    <SplitView
+      dividerStyle={SplitViewDividerStyle.SplitViewDividerStylePaneSplitter}
+      vertical={true}
+      style={{flexGrow: 1, flexDirection: 'row'}}>
+      <MasterView />
+      <DetailView />
+    </SplitView>
+  );
+};
 ```
 
 ## License
 
 MIT
+
+## Inspiration
+
+https://github.com/malcommac/DMSplitView/blob/master/DMSplitViewExample/DMSplitView/DMSplitView.m

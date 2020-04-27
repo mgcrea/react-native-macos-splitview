@@ -1,7 +1,7 @@
 {
   "name": "react-native-macos-splitview",
   "version": "0.1.0",
-  "description": "foobar",
+  "description": "NSSplitView component for react-native on macOS",
   "main": "lib/commonjs/index.js",
   "module": "lib/module/index.js",
   "types": "lib/typescript/src/index.d.ts",
