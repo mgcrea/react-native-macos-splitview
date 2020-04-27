@@ -93,8 +93,8 @@
   ],
   "release-it": {
     "git": {
-      "commitMessage": "chore(git): cut the %s release",
-      "tagName": "v%s"
+      "commitMessage": "chore(git): cut the ${version} release",
+      "tagName": "v${version}"
     },
     "npm": {
       "publish": true
