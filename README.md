@@ -8,6 +8,17 @@ NSSplitView component for react-native on macOS
 yarn add react-native-macos-splitview
 ```
 
+- Add pod to your `macos/Podfile`, example:
+
+```ruby
+target 'MacOSSandbox-macOS' do
+  platform :macos, '10.14'
+  use_native_modules!
+  # Pods specifically for macOS target
+  pod 'RNSplitView', :path => "../node_modules/react-native-macos-splitview"
+end
+```
+
 ## Usage
 
 ```tsx
