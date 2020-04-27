@@ -24,7 +24,6 @@ RCT_EXPORT_VIEW_PROPERTY(vertical, BOOL)
 
 - (void)splitViewDidResizeSubviews:(NSNotification *)notification {
   NSLog(@"splitViewDidResizeSubviews");
-  [self setNeedsLayout];
 }
 
 - (CGFloat)splitView:(NSSplitView *)splitView
