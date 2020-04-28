@@ -1,6 +1,8 @@
 # react-native-macos-splitview
 
-NSSplitView component for react-native on macOS
+NSSplitView component for react-native on macOS.
+
+Currently a work in progress, the native implementation is currently not working, howevever there is a functionnal pure js implementation.
 
 ## Installation
 
