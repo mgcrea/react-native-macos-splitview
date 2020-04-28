@@ -1,4 +1,5 @@
-import SplitView, {SplitViewDividerStyle} from './SplitView';
+import SplitView from './SplitView';
+import NativeSplitView, {SplitViewDividerStyle} from './NativeSplitView';
 
-export {SplitViewDividerStyle};
+export {NativeSplitView, SplitViewDividerStyle};
 export default SplitView;
