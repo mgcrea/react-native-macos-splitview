@@ -17,7 +17,7 @@
     "typescript": "tsc --noEmit",
     "lint": "eslint --ext .js,.ts,.tsx .",
     "prepare": "bob build",
-    "release": "release-it",
+    "release": "npx release-it",
     "example": "yarn --cwd example",
     "pods": "cd example/ios && node -e \"process.exit(require('os').platform() === 'darwin')\" || pod install",
     "bootstrap": "yarn example && yarn && yarn pods"
@@ -50,7 +50,6 @@
     "prettier": "^2.0.5",
     "react": "^16.9.0",
     "react-native": "^0.61.5",
-    "release-it": "^13.5.6",
     "typescript": "^3.8.3"
   },
   "peerDependencies": {
