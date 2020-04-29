@@ -2,12 +2,13 @@
 // const AnimatedNode = require('./AnimatedNode');
 // const AnimatedWithChildren = require('./AnimatedWithChildren');
 
-import AnimatedWithChildren from 'react-native/Libraries/Animated/src/nodes/AnimatedWithChildren';
-import AnimatedNode from 'react-native/Libraries/Animated/src/nodes/AnimatedNode';
-import AnimatedInterpolation from 'react-native/Libraries/Animated/src/nodes/AnimatedInterpolation';
 import {Animated} from 'react-native';
-
-// const {AnimatedInterpolation, AnimatedWithChildren} = Animated;
+// @ts-ignore
+import AnimatedInterpolation from 'react-native/Libraries/Animated/src/nodes/AnimatedInterpolation';
+// @ts-ignore
+import AnimatedNode from 'react-native/Libraries/Animated/src/nodes/AnimatedNode';
+// @ts-ignore
+import AnimatedWithChildren from 'react-native/Libraries/Animated/src/nodes/AnimatedWithChildren';
 
 export default class AnimatedClamp extends AnimatedWithChildren {
   _a: AnimatedNode;
