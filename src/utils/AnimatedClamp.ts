@@ -1,7 +1,3 @@
-// const AnimatedInterpolation = require('./AnimatedInterpolation');
-// const AnimatedNode = require('./AnimatedNode');
-// const AnimatedWithChildren = require('./AnimatedWithChildren');
-
 import {Animated} from 'react-native';
 // @ts-ignore
 import AnimatedInterpolation from 'react-native/Libraries/Animated/src/nodes/AnimatedInterpolation';
