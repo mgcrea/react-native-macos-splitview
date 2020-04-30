@@ -4,7 +4,7 @@
 
 #import <React/RCTComponent.h>
 
-@interface RNSplitView : NSSplitView
+@interface RNSplitView : NSSplitView <NSSplitViewDelegate>
 
 @end
 
