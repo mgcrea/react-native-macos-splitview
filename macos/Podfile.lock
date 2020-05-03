@@ -217,6 +217,8 @@ PODS:
     - React-cxxreact (= 0.61.5)
     - React-jsi (= 0.61.5)
     - ReactCommon/jscallinvoker (= 0.61.5)
+  - RNSplitView (0.0.1):
+    - React
   - Yoga (1.14.0)
 
 DEPENDENCIES:
@@ -248,6 +250,7 @@ DEPENDENCIES:
   - React-RCTVibration (from `../node_modules/react-native-macos/Libraries/Vibration`)
   - ReactCommon/jscallinvoker (from `../node_modules/react-native-macos/ReactCommon`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native-macos/ReactCommon`)
+  - RNSplitView (from `../modules/RNSplitView`)
   - Yoga (from `../node_modules/react-native-macos/ReactCommon/yoga`)
 
 EXTERNAL SOURCES:
@@ -301,6 +304,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-macos/Libraries/Vibration"
   ReactCommon:
     :path: "../node_modules/react-native-macos/ReactCommon"
+  RNSplitView:
+    :path: "../modules/RNSplitView"
   Yoga:
     :path: "../node_modules/react-native-macos/ReactCommon/yoga"
 
@@ -330,8 +335,9 @@ SPEC CHECKSUMS:
   React-RCTText: a1c8bd9e902a9d9a72e93ffe46347cc1c849bf70
   React-RCTVibration: ee8e86b21a3d98accd140bb2f33822415033632b
   ReactCommon: d99a3da9a2b046812bd7c90bdeec7efc2e3bf68b
+  RNSplitView: 48dc4d6b991fda30bea0435a432995ba876a273c
   Yoga: 8508e73aac0b7de92f5c69e435e0fb789335ce9f
 
-PODFILE CHECKSUM: 0982d2c920d79c3b91f18292ecfd1ba0f769587c
+PODFILE CHECKSUM: 05eb7401a5943924343f29a6dd8cf1814fa36364
 
 COCOAPODS: 1.9.1

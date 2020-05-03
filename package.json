@@ -1,18 +1,24 @@
 {
-  "name": "Sandbox",
+  "name": "react-native-macos-sandbox",
   "version": "0.0.1",
+  "description": "Sandbox macOS application",
+  "repository": "gitlab.mgcrea.io:mgcrea/sandbox-macos",
+  "homepage": "https://gitlab.mgcrea.io/mgcrea/sandbox-macos",
+  "author": "Olivier Louvignes <olivier@mgcrea.io>",
+  "license": "UNLICENSED",
   "private": true,
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
+    "pod": "cd macos; pod install; cd -",
     "start": "react-native start",
     "test": "jest",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "start:macos": "node node_modules/react-native-macos/local-cli/cli.js start --use-react-native-macos"
   },
   "dependencies": {
-    "react": "16.11.0",
-    "react-native": "0.62.2",
+    "react": "^16.11.0",
+    "react-native": "^0.62.2",
     "react-native-macos": "^0.61.0-0"
   },
   "devDependencies": {
